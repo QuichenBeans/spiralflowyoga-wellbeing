@@ -1,0 +1,311 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Nunito+Sans&display=swap");
+
+* {
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    background-color: hsl(180, 25%, 69%);
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 19px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.parent_container {
+    display: flex;
+    gap: 630px;
+    border-bottom: 3px double black;
+    padding: 0 50px;
+    background-color: white;
+}
+
+.child-container {
+    background-color: white;
+    align-items: center;
+}
+
+.image {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 200px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 37px;
+    justify-content: flex-end;
+    background-color: white;
+}
+
+.nav-bar li a {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+}
+
+.nav-bar li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Relates to the main file */
+.main-text {
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.main-text2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.parent-main {
+    display: flex;
+    gap: 20px;
+}
+
+.child-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 800px;
+    max-height: 450px;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.child-main2 {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.book {
+    display: block;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.book2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.book3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.book-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.book-list li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    padding: 10px;
+    border: 3px solid #dddcdc;
+    border-radius: 5px;
+    background-color: #f6cba1;
+}
+
+.book-list li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+/* Relates to the why yoga file */
+.list-container {
+    max-width: 800px;
+    margin: 0 auto;  
+}
+
+.list-container ul.li {
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 0; 
+}
+
+.why-yoga-title {
+    padding-top: 40px;
+}
+
+.why-yoga-list {
+    margin-bottom: 1rem;
+}
+
+.expect {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.expect2 {
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.expect3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.expect-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+.expect-list li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    padding: 10px;
+    border: 3px solid #dddcdc;
+    border-radius: 5px;
+    background-color: #f6cba1;
+}
+
+.expect-list li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Relates to booking file */
+.booking-main {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+.booking-title {
+    margin-top: 1rem;
+}
+
+.booking-list {
+    margin-bottom: 1.5rem;
+}
+
+.booking-list2 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.booking-list2 li a {
+    display: block;
+    text-decoration: none;
+    background-color: #f6cba1;
+    color: black;
+    width: 220px;
+    padding: 10px;
+    border: 3px solid #dddcdc;
+    border-radius: 5px;
+}
+
+.booking-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.booking-button p a {
+    display: block;
+    text-decoration: none;
+    background-color: #f6cba1;
+    color: black;
+    width: 100px;
+    padding: 10px;
+    border: 3px solid #dddcdc;
+    border-radius: 5px;
+}
+
+.booking-button p a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Relates to the about_me file */
+.about-me-main {
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.about-me-title {
+    margin-top: 1rem;
+}
+
+.about-me-image {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-me-image img {
+    max-width: 50%;
+}
+
+/* Relates to the contact file */
+.contact-title {
+    margin-top: 1rem;
+}
+
+.contact-image {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-text {
+    text-align: center;
+    margin-top: 2rem;
+}
+
