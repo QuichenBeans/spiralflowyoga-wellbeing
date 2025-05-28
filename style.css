@@ -289,9 +289,79 @@ p {
 }
 
 /* Mobile style (min-width: 600px) */
-@media (min-width: 600px) {
+@media (max-width: 480px) {
+    .parent_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-text, .list-container, .expect, 
+    .expect2, .booking-main, .about-me-main {
+        max-width: 400px; 
+    }
+
+    .child-main {
+        max-width: 400px;
+        max-height: 450px;
+    }
     
+    .book-list li a, .expect-list li a, 
+    .booking-list2 li a, .booking-button p a {
+        width: 120px; 
+    }
+
+    * {
+        font-size: 18px; /* Increase base font size */
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    .parent_container {
+        flex-direction: row; /* Horizontal layout */
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    
+    .nav-bar {
+        flex-direction: row; /* Horizontal nav */
+        padding-top: 37px;
+    }
+    
+    .nav-bar li a {
+        width: 100px;
+    }
+    
+    .parent-main {
+        flex-direction: row; /* Side-by-side layout */
+    }
+
+    .book-list, .expect-list, .booking-list2 {
+        flex-direction: row; /* Horizontal lists */
+    }
+    
+    .about-me-image {
+        flex-direction: row; /* Side-by-side images */
+    }
+    
+    .about-me-image img {
+        max-width: 50%;
+    }
+
+   .book-list, .expect-list, .booking-list2 {
+        flex-direction: row; /* Horizontal lists */
+    }
+    
+    .about-me-image {
+        flex-direction: row; /* Side-by-side images */
+    }
+    
+    .about-me-image img {
+        max-width: 50%;
+    }
 }
+
 
 /* Desktop Styles (min-width: 1024px) */
 @media (min-width: 1024px) {
