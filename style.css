@@ -33,39 +33,40 @@ p {
 
 .parent_container {
     display: flex;
-    gap: 630px;
+    justify-content: space-between;
     border-bottom: 3px double black;
-    padding: 0 50px;
+    padding: 20px;
     background-color: white;
 }
 
 .child-container {
+    display: flex;
     background-color: white;
-    align-items: center;
 }
 
 .image {
     text-align: center;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     max-width: 200px;
+    background-color: white;
 }
 
 .nav-bar {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    padding-right: 10px;
-    padding-left: 10px;
     padding-top: 37px;
-    justify-content: flex-end;
+    background-color: white;
+}
+
+.nav-bar li {
     background-color: white;
 }
 
 .nav-bar li a {
     display: block;
-    width: 100px;
+    width: auto;
     padding: 10px;
     color: black;
     text-decoration: none;
@@ -78,7 +79,7 @@ p {
     color: white;
 }
 
-/* Relates to the main file */
+/* Relates to the index file */
 .main-text, .list-container, .expect2, .booking-main, .about-me-main {
     max-width: 90%;
     text-align: left;
@@ -287,3 +288,38 @@ p {
     margin-top: 2rem;
 }
 
+/* Mobile style (min-width: 600px) */
+@media (min-width: 600px) {
+    
+}
+
+/* Desktop Styles (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .parent_container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    .main-text, .list-container, .expect, 
+    .expect2, .booking-main, .about-me-main {
+        max-width: 800px; 
+    }
+    
+    .child-main {
+        max-width: 800px;
+        max-height: 450px;
+    }
+    
+    .book-list li a, .expect-list li a, 
+    .booking-list2 li a, .booking-button p a {
+        width: 220px; 
+    }
+}
+
+/* Large Desktop Styles (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .parent-main {
+        justify-content: center;
+    }
+}
