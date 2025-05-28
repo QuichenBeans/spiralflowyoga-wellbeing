@@ -48,7 +48,7 @@ p {
     text-align: center;
     display: flex;
     justify-content: flex-end;
-    max-width: 200px;
+    max-width: 120px;
     background-color: white;
 }
 
@@ -288,87 +288,101 @@ p {
     margin-top: 2rem;
 }
 
-/* Mobile style (min-width: 600px) */
-@media (max-width: 480px) {
+
+/* FORMATTING FOR DIFFERENT SCREEN SIZES */
+
+
+/* MOBILE STYLES (max-width: 480px) */
+@media (max-width: 450px) {
+    
+
     .parent_container {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column; /* Stack vertically on mobile */
+        padding: 0 20px; /* Less padding on mobile */
+        width: 100%;
+        margin: 0 auto;
     }
 
     .main-text, .list-container, .expect, 
-    .expect2, .booking-main, .about-me-main {
-        max-width: 400px; 
+    .expect2, .booking-main, .about-me-main,
+    .child-main {
+        max-width: 100%; /* Full width on mobile */
+        text-align: center; /* Center text on mobile */
     }
 
     .child-main {
-        max-width: 400px;
-        max-height: 450px;
+        max-height: none; /* Remove height restriction */
+    }
+
+    .child-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .parent-main img {
+        justify-content: center;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
     }
     
     .book-list li a, .expect-list li a, 
     .booking-list2 li a, .booking-button p a {
-        width: 120px; 
+        width: 100%; /* Full width buttons on mobile */
+        margin: 5px 0; /* Add spacing between stacked items */
+        display: block; /* Make links block-level */
     }
 
     * {
-        font-size: 18px; /* Increase base font size */
+        font-size: 18px; /* Slightly larger text on mobile */
     }
     
     h2 {
-        font-size: 26px;
-    }
-    
-    .parent_container {
-        flex-direction: row; /* Horizontal layout */
-        justify-content: space-between;
-        padding: 0 50px;
+        font-size: 26px; /* Slightly smaller headings */
     }
     
     .nav-bar {
-        flex-direction: row; /* Horizontal nav */
-        padding-top: 37px;
+        flex-direction: column; /* Stack nav vertically */
+        padding-top: 20px;
+        margin: 0 auto;
     }
     
     .nav-bar li a {
-        width: 100px;
+        width: 100%; /* Full width nav items */
+        margin: 5px 0; /* Add spacing */
     }
     
     .parent-main {
-        flex-direction: row; /* Side-by-side layout */
+        flex-direction: column; /* Stack content vertically */
     }
 
     .book-list, .expect-list, .booking-list2 {
-        flex-direction: row; /* Horizontal lists */
+        flex-direction: column; /* Stack list items vertically */
     }
     
     .about-me-image {
-        flex-direction: row; /* Side-by-side images */
-    }
-    
-    .about-me-image img {
-        max-width: 50%;
+        flex-direction: column; /* Stack images vertically */
     }
 
-   .book-list, .expect-list, .booking-list2 {
-        flex-direction: row; /* Horizontal lists */
-    }
-    
-    .about-me-image {
-        flex-direction: row; /* Side-by-side images */
-    }
-    
     .about-me-image img {
-        max-width: 50%;
+        max-width: 100%; /* Full width images */
+        margin-bottom: 15px; /* Add spacing between images */
+    }
+
+    .child-main2 img {
+        display: none;
     }
 }
-
 
 /* Desktop Styles (min-width: 1024px) */
 @media (min-width: 1024px) {
     .parent_container {
         display: flex;
         justify-content: space-between;
-
     }
     
     .main-text, .list-container, .expect, 
