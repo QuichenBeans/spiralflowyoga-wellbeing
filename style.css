@@ -333,6 +333,7 @@ p {
         padding: 0 20px;
         width: 100%;
         margin: 0 auto;
+        position: relative;
     }
 
     .main-text, .list-container, .expect, 
@@ -361,6 +362,7 @@ p {
         display: flex;
         justify-content: center;
         margin: 0 auto;
+        position: relative;
     }
     
     .book-list li a, .expect-list li a, 
@@ -389,12 +391,12 @@ p {
     }
 
     .nav-bar li {
-        text-align: center !important;
+        text-align: center;
         width: 100%;
     }
     
     .nav-bar li a {
-        width: 100%; 
+        width: 92.5px; 
         margin: 8px 0;
         display: flex;
         justify-content: center;
