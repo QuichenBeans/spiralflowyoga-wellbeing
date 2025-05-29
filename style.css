@@ -291,93 +291,6 @@ p {
 
 /* FORMATTING FOR DIFFERENT SCREEN SIZES */
 
-
-/* MOBILE STYLES (max-width: 480px) */
-@media (max-width: 450px) {
-    
-
-    .parent_container {
-        display: flex;
-        flex-direction: column; /* Stack vertically on mobile */
-        padding: 0 20px; /* Less padding on mobile */
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .main-text, .list-container, .expect, 
-    .expect2, .booking-main, .about-me-main,
-    .child-main {
-        max-width: 100%; /* Full width on mobile */
-        text-align: center; /* Center text on mobile */
-    }
-
-    .child-main {
-        max-height: none; /* Remove height restriction */
-    }
-
-    .child-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .parent-main img {
-        justify-content: center;
-    }
-
-    .image {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-    }
-    
-    .book-list li a, .expect-list li a, 
-    .booking-list2 li a, .booking-button p a {
-        width: 100%; /* Full width buttons on mobile */
-        margin: 5px 0; /* Add spacing between stacked items */
-        display: block; /* Make links block-level */
-    }
-
-    * {
-        font-size: 18px; /* Slightly larger text on mobile */
-    }
-    
-    h2 {
-        font-size: 26px; /* Slightly smaller headings */
-    }
-    
-    .nav-bar {
-        flex-direction: column; /* Stack nav vertically */
-        padding-top: 20px;
-        margin: 0 auto;
-    }
-    
-    .nav-bar li a {
-        width: 100%; /* Full width nav items */
-        margin: 5px 0; /* Add spacing */
-    }
-    
-    .parent-main {
-        flex-direction: column; /* Stack content vertically */
-    }
-
-    .book-list, .expect-list, .booking-list2 {
-        flex-direction: column; /* Stack list items vertically */
-    }
-    
-    .about-me-image {
-        flex-direction: column; /* Stack images vertically */
-    }
-
-    .about-me-image img {
-        max-width: 100%; /* Full width images */
-        margin-bottom: 15px; /* Add spacing between images */
-    }
-
-    .child-main2 img {
-        display: none;
-    }
-}
-
 /* Desktop Styles (min-width: 1024px) */
 @media (min-width: 1024px) {
     .parent_container {
@@ -405,5 +318,111 @@ p {
 @media (min-width: 1200px) {
     .parent-main {
         justify-content: center;
+    }
+}
+
+/* MOBILE STYLES (max-width: 480px) */
+@media (max-width: 600px) {
+    
+
+    .parent_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-text, .list-container, .expect, 
+    .expect2, .booking-main, .about-me-main,
+    .child-main {
+        max-width: 100%; 
+        text-align: center; 
+        margin: 0 auto;
+    }
+
+    .child-main {
+        max-height: none; 
+    }
+
+    .child-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .parent-main img {
+        justify-content: center;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .book-list li a, .expect-list li a, 
+    .booking-list2 li a, .booking-button p a {
+        width: 100%;
+        margin: 0 auto;
+        display: flex; 
+        justify-content: center;
+
+    }
+
+    .book-list li {
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    .nav-bar {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 20px;
+
+    }
+
+    .nav-bar li {
+        text-align: center !important;
+        width: 100%;
+    }
+    
+    .nav-bar li a {
+        width: 100%; 
+        margin: 8px 0;
+        display: flex;
+        justify-content: center;
+        padding-right: 5px;
+    }
+    
+    .parent-main {
+        flex-direction: column; 
+    }
+
+    .book-list, .expect-list, .booking-list2 {
+        flex-direction: column; 
+    }
+    
+    .about-me-image, .child-main2 {
+        display: none;
+        flex-direction: column; 
+    }
+
+    .about-me-image img {
+        max-width: 100%;
+        margin-bottom: 15px; 
+    }
+
+    .about-me-title, .about-me-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
     }
 }
