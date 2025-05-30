@@ -333,15 +333,19 @@ p {
         padding: 0 20px;
         width: 100%;
         margin: 0 auto;
-        position: relative;
     }
 
-    .main-text, .list-container, .expect, 
-    .expect2, .booking-main, .about-me-main,
+    .main-text, .booking-main, .about-me-main,
     .child-main {
         max-width: 100%; 
         text-align: center; 
-        margin: 0 auto;
+    }
+
+    .list-container, .expect, 
+    .expect2 {
+        max-width: 100%;
+        text-align: center;
+        padding-left: 40px;
     }
 
     .child-main {
@@ -366,8 +370,8 @@ p {
     }
     
     .book-list li a, .expect-list li a, 
-    .booking-list2 li a, .booking-button p a {
-        width: 100%;
+    .booking-list2 li a {
+        width: 94%;
         margin: 0 auto;
         display: flex; 
         justify-content: center;
@@ -426,5 +430,28 @@ p {
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+    }
+
+    .why-yoga-list {
+        text-align: left;
+    }
+
+    .booking-main {
+        text-align: left;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 35px;
+    }
+
+    .booking-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .expect-list {
+        width: 100%;
+        text-align: center;
+        padding-left: 17.5px;
     }
 }
