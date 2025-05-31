@@ -395,13 +395,18 @@ p {
         list-style-position: outside;
     }
 
-    .book-list li, .booking-list2 li a {
-        width: 80%;
+    .book-list {
+        margin-bottom: 1rem;
+    }
+
+    .book-list li a {
+        width: 100%;
         display: flex;
         justify-content: center;
         padding: 10px 20px;
         margin: 0 auto;
         align-items: center;
+        margin-bottom: 0.5rem;
     }
     
     h2 {
@@ -478,7 +483,14 @@ p {
 
     .booking-list2 {
         width: 100%;
-        margin-left: 20px;
+        margin-left: 3px;
+    }
+
+    .booking-list2 li a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .about-me-main {
