@@ -222,6 +222,11 @@ p {
     margin-top: 2rem;
 }
 
+.booking-list2 li a:hover {
+    background-color: #555;
+    color: white;
+}
+
 .booking-list2 li a {
     display: block;
     text-decoration: none;
