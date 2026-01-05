@@ -46,6 +46,10 @@ h3 {
     display: flex;
     justify-content: flex-end;
     max-width: 120px;
+    
+}
+
+.image a {
     background-color: white;
 }
 
